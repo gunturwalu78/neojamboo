@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://pluvet-1251765364.cos.ap-chengdu.myqcloud.com/typora%5C20201129165258_12851fff782b6dc9fe9c8cf3347b3c01.png
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>图论 匹配 着色</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "图论 匹配 着色",
+  "datePublished": "2021-04-30",
+  "image": [https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Desargues_graph_3color_edge.svg/400px-Desargues_graph_3color_edge.svg.png,https://ae01.alicdn.com/kf/Hfe60c5d9662a4825ac6daaf2d01a65d1m.jpg,https://img.google-info.cn/storage/big/6563826.jpg?9cce68c2b1a2fc031cf72e8bf77ff8c8=5612e201e861e57e8aae684998fa23d7],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=图论 匹配 着色",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Blog" class="navbar-brand mb-1">Blog</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div class="d-block p-4">
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd232bd6e1c0d85f8dc8c8119bc5f5a1e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/d232bd6e1c0d85f8dc8c8119bc5f5a1e/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+</div>			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>图论 匹配 着色</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-primary" href="/%E6%B0%B4-%E3%81%A7-%E8%89%B2-%E3%81%8C-%E5%A4%89%E3%82%8F%E3%82%8B-%E7%B4%99-100-%E5%9D%87.html">水 で 色 が 変わる 紙 100 均</a>
+											<a class="badge badge-dark" href="/%E5%A3%81%E3%81%AE%E7%9D%80%E8%89%B2%E6%B1%9A%E3%82%8C%E3%81%A8%E3%82%8A.html">壁の着色汚れとり</a>
+											<a class="badge badge-info" href="/%E9%AB%AA-%E8%89%B2-%E8%87%AA%E7%94%B1-%E3%83%90%E3%82%A4%E3%83%88-%E7%A5%9E%E5%A5%88%E5%B7%9D.html">髪 色 自由 バイト 神奈川</a>
+											<a class="badge badge-secondary" href="/%E3%83%89%E3%83%AC%E3%83%BC%E3%83%B3-%E6%8E%92-%E6%B6%B2-%E8%89%B2-%E7%95%B0%E5%B8%B8.html">ドレーン 排 液 色 異常</a>
+											<a class="badge badge-danger" href="/%E3%82%B8%E3%83%AB-%E3%82%B9%E3%83%81%E3%83%A5%E3%82%A2%E3%83%BC%E3%83%88-%E3%82%AB%E3%83%A9%E3%82%B3%E3%83%B3-%E7%9D%80%E8%89%B2-%E7%9B%B4%E5%BE%84.html">ジル スチュアート カラコン 着色 直径</a>
+											<a class="badge badge-primary" href="/led-%E8%89%B2-%E5%A4%89%E5%8C%96-%E5%8E%9F%E7%90%86.html">led 色 変化 原理</a>
+											<a class="badge badge-light" href="/%E3%83%AD%E3%83%83%E3%83%88%E3%83%AA%E3%83%B3%E3%82%B0-%E3%83%A9%E3%83%94%E3%83%83%E3%83%89-%E3%83%97%E3%83%AD-%E8%89%B2.html">ロットリング ラピッド プロ 色</a>
+											<a class="badge badge-danger" href="/4-%E8%89%B2-%E5%9E%8B-%E8%89%B2%E8%A6%9A-%E7%94%B7%E6%80%A7.html">4 色 型 色覚 男性</a>
+											<a class="badge badge-dark" href="/bmw-%E3%82%A2%E3%83%B3%E3%83%93%E3%82%A8%E3%83%B3%E3%83%88-%E3%83%A9%E3%82%A4%E3%83%88-%E8%89%B2.html">bmw アンビエント ライト 色</a>
+											<a class="badge badge-secondary" href="/%E5%94%87-%E8%89%B2-%E3%81%A4%E3%81%91%E3%82%8B-%E6%95%B4%E5%BD%A2.html">唇 色 つける 整形</a>
+											<a class="badge badge-success" href="/%E3%83%A6%E3%83%AB%E3%83%AA%E3%82%A2-%E7%9D%80%E8%89%B2%E7%9B%B4%E7%B3%BB138-%E3%83%AF%E3%83%B3%E3%83%87%E3%83%BC.html">ユルリア 着色直系138 ワンデー</a>
+											<a class="badge badge-success" href="/%E5%A3%81-%E3%81%AE-%E8%89%B2-%E3%82%92-%E5%A4%89%E3%81%88%E3%82%8B-%E3%83%9A%E3%83%B3%E3%82%AD.html">壁 の 色 を 変える ペンキ</a>
+											<a class="badge badge-warning" href="/%E3%82%B3%E3%83%AD%E3%83%8A%E7%9F%B3%E6%B2%B9%E3%82%B9%E3%83%88%E3%83%BC%E3%83%96-%EF%BD%93%EF%BD%90-%EF%BD%84%EF%BD%98-%E6%9B%BF%E3%81%88%E5%BF%83.html">コロナ石油ストーブ ｓｐ ｄｘ 替え心</a>
+											<a class="badge badge-success" href="/%E8%89%B2-%E3%81%A4%E3%81%8D-%E3%83%AA%E3%83%83%E3%83%97-%E3%83%A1%E3%83%B3%E3%82%BA.html">色 つき リップ メンズ</a>
+											<a class="badge badge-primary" href="/%E3%83%9A%E3%83%87%E3%82%A3%E3%82%AD%E3%83%A5%E3%82%A2-%E4%BA%8C-%E8%89%B2-%E9%85%8D%E8%89%B2.html">ペディキュア 二 色 配色</a>
+						</div>
+<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a7e6ae4bcf1c49afa3b184d0c694ad6c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/a7e6ae4bcf1c49afa3b184d0c694ad6c/invoke.js"></scr' + 'ipt>');
+</script>
+		
+	</center>
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="https://img-blog.csdnimg.cn/2019051511410527.?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNDM4MTY1,size_16,color_FFFFFF,t_70" data-lightbox="roadtrip" data-title="图论 十四 图的着色 程勇uestc的博客 Csdn博客">
+						<img class="card-img" src="https://img-blog.csdnimg.cn/2019051511410527.?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNDM4MTY1,size_16,color_FFFFFF,t_70" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3GO8qzZmXtYB8Kvy8ZfBnBIKPkT5NsHWwhT62qwp-bWdn_UVbNycKOApCGzoV3_fMlUg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图论 十四 图的着色 程勇uestc的博客 Csdn博客
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.ytimg.com/vi/TTX6bWsvdtM/maxresdefault.jpg" data-lightbox="roadtrip" data-title="图的着色 Youtube">
+						<img class="card-img" src="https://i.ytimg.com/vi/TTX6bWsvdtM/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ2LFUFJDX0AAyyaKtpVPdC_he0RCUYoNofh1VkD4YCjiVMvPiQjpPEIJg-MhVIXZp4hM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图的着色 Youtube
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img-blog.csdnimg.cn/2019040308355299.?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNDM4MTY1,size_16,color_FFFFFF,t_70" data-lightbox="roadtrip" data-title="图论 十二 偶图的匹配问题 程勇uestc的博客 Csdn博客">
+						<img class="card-img" src="https://img-blog.csdnimg.cn/2019040308355299.?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQwNDM4MTY1,size_16,color_FFFFFF,t_70" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMC2eDXoQPUrVAhulU3ja441PbdclESQkS3jXZZ6UOwDxvoWJbgkROeTYP6bdcGzVCyuI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图论 十二 偶图的匹配问题 程勇uestc的博客 Csdn博客
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://raw.githubusercontent.com/littlerest/blogImages/main/img/20210102130246860_1432677501.png" data-lightbox="roadtrip" data-title="图论 形形色色的树和森林 Restkhz">
+						<img class="card-img" src="https://raw.githubusercontent.com/littlerest/blogImages/main/img/20210102130246860_1432677501.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaIJ5KWzJz5iMo_EQ_kX3IO-hhQ-YM1qn5XMw46Yby0PcXTvp2PpHxd9FeYotwkLj1vFI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图论 形形色色的树和森林 Restkhz
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img-blog.csdnimg.cn/20190527165633717.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9oZWluc3Zlbi5ibG9nLmNzZG4ubmV0,size_16,color_FFFFFF,t_70" data-lightbox="roadtrip" data-title="图论及其应用 学习笔记 图的着色 Heinsven的博客 Csdn博客">
+						<img class="card-img" src="https://img-blog.csdnimg.cn/20190527165633717.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9oZWluc3Zlbi5ibG9nLmNzZG4ubmV0,size_16,color_FFFFFF,t_70" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5FEQV2vgF9BI12u31zfiQN5XN18G8TYBLs7hcsms0nMDFezUKdzQrSaxZ-TM2Npscp8c';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图论及其应用 学习笔记 图的着色 Heinsven的博客 Csdn博客
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.vue5.com/upload/graph_theory/images/region_coloring.jpg" data-lightbox="roadtrip" data-title="图论快速指南 Vue教程">
+						<img class="card-img" src="http://www.vue5.com/upload/graph_theory/images/region_coloring.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDgfVj-swgOdmAaJXr7f8fAOlSKBZIPLrQa5y6ie1RnAH45jVpB9aXBCNxZFYDrSISwVM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图论快速指南 Vue教程
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	
+</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.vue5.com/upload/graph_theory/images/maximum_matching.jpg" data-lightbox="roadtrip" data-title="图论快速指南 Vue教程">
+						<img class="card-img" src="http://www.vue5.com/upload/graph_theory/images/maximum_matching.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnMNzsYwmALiw4JwGjltW-Z9eovJ7k-A5r8ynTCJNdffshS6NPh87lIF-TXAYWQL16OeE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图论快速指南 Vue教程
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img-blog.csdnimg.cn/20200823172038400.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0Njg3NTU5,size_16,color_FFFFFF,t_70" data-lightbox="roadtrip" data-title="图论学习 7 图的着色 思维导图 边着色点着色色多项式临界图与完美图 南波兔不写bug Csdn博客">
+						<img class="card-img" src="https://img-blog.csdnimg.cn/20200823172038400.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0Njg3NTU5,size_16,color_FFFFFF,t_70" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWxGZlvLIy22zMSo5ngEX58fdkFbzIevPsS9izcA15l2m6kD5XR1KwF2mD9WEclV5z3go';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图论学习 7 图的着色 思维导图 边着色点着色色多项式临界图与完美图 南波兔不写bug Csdn博客
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.vue5.com/upload/graph_theory/images/chromatic_number.jpg" data-lightbox="roadtrip" data-title="图论快速指南 Vue教程">
+						<img class="card-img" src="http://www.vue5.com/upload/graph_theory/images/chromatic_number.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJZ6FmDpFB4ca_5KpczBGUNIGeH0K9VggQsvGBLnjC1DPWFf6Xb-6ucSRCYH13VvcDJeQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图论快速指南 Vue教程
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.vue5.com/upload/graph_theory/images/matching1.jpg" data-lightbox="roadtrip" data-title="图论快速指南 Vue教程">
+						<img class="card-img" src="http://www.vue5.com/upload/graph_theory/images/matching1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAAlLjTLx7j1TZToZ0AtTfP-6poiFqNsPhrtev8KsHS0zhUe0NoJeSvNB0MmUbPJ_8fdY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图论快速指南 Vue教程
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img14.360buyimg.com/n1/jfs/t967/21/227739609/160562/5ccc942/550bd068N818a3221.jpg" data-lightbox="roadtrip" data-title="图论导论 第5版 英 R J 威尔逊 Robin J Wilson 摘要书评试读 京东图书">
+						<img class="card-img" src="https://img14.360buyimg.com/n1/jfs/t967/21/227739609/160562/5ccc942/550bd068N818a3221.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5XMmJHrMmXQMOSIpg8W8_M8r3ZiW06BgZGXOVUfG7C2VMB65kpRh9xryCcA_W0Nlt0Ws';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图论导论 第5版 英 R J 威尔逊 Robin J Wilson 摘要书评试读 京东图书
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img-blog.csdnimg.cn/20191107214855145.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXBob25lMTc=,size_16,color_FFFFFF,t_70" data-lightbox="roadtrip" data-title="回溯 图论 N色地图着色问题 Jayphone17的博客 Csdn博客">
+						<img class="card-img" src="https://img-blog.csdnimg.cn/20191107214855145.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pheXBob25lMTc=,size_16,color_FFFFFF,t_70" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYY8pvHVXZ7EPNO9FxJV5DO1cd_kDoflqEAxeI1FOehvXUCgRoUIjJDpGOru_ArXJOUpo';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				回溯 图论 N色地图着色问题 Jayphone17的博客 Csdn博客
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.vue5.com/upload/graph_theory/images/region_coloring1.jpg" data-lightbox="roadtrip" data-title="图论快速指南 Vue教程">
+						<img class="card-img" src="http://www.vue5.com/upload/graph_theory/images/region_coloring1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGq4Jsc4Osg56_dr1uVkQlylQIzDOvOGQdavt7ksAkiou_4L0p-ctNNdjXIJ5Py09ykFo';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图论快速指南 Vue教程
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img2020.cnblogs.com/blog/2070852/202008/2070852-20200819105934289-1091457817.png" data-lightbox="roadtrip" data-title="电子科技大学 图论及其应用 复习总结 第五章匹配与因子分解 进击的搬砖猿 博客园">
+						<img class="card-img" src="https://img2020.cnblogs.com/blog/2070852/202008/2070852-20200819105934289-1091457817.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRasW9l8n8keXsefwLh8j3BNJHwNzmcFtnLszp_0lCqGq9FN5moS96P77KFwj13V7vYtjY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				电子科技大学 图论及其应用 复习总结 第五章匹配与因子分解 进击的搬砖猿 博客园
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img-blog.csdnimg.cn/20190316185255459.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg0MzgzNQ==,size_16,color_FFFFFF,t_70" data-lightbox="roadtrip" data-title="图论 最大团问题和最大独立集 二分图相关 上总介的博客 Csdn博客 最大团和最大独立集">
+						<img class="card-img" src="https://img-blog.csdnimg.cn/20190316185255459.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg0MzgzNQ==,size_16,color_FFFFFF,t_70" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_1lETlgor1f_yPXnXJO-n2uRvpnQ2cSEQ7C35dRwh85N1iLDFWMsI_F_CXWChCOo89w';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图论 最大团问题和最大独立集 二分图相关 上总介的博客 Csdn博客 最大团和最大独立集
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Desargues_graph_3color_edge.svg/400px-Desargues_graph_3color_edge.svg.png" data-lightbox="roadtrip" data-title="因子 图论 Wikiwand">
+						<img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Desargues_graph_3color_edge.svg/400px-Desargues_graph_3color_edge.svg.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2-edEwgQc3aKIGpXe2jGrGAkRTGSpBEB4LrhjL2Of_3460vXMoMz0xM-RzNoviPNnshg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				因子 图论 Wikiwand
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img.google-info.cn/storage/big/6563826.jpg?9cce68c2b1a2fc031cf72e8bf77ff8c8=5612e201e861e57e8aae684998fa23d7" data-lightbox="roadtrip" data-title="这是什么图论 扩展图 百科全书">
+						<img class="card-img" src="https://img.google-info.cn/storage/big/6563826.jpg?9cce68c2b1a2fc031cf72e8bf77ff8c8=5612e201e861e57e8aae684998fa23d7" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUa_74FTj9T476jlDHZcxLZPUjElJtxSKPMMNXtxSP9StC0UwROTXX-Zx37LCTrk1k1B4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				这是什么图论 扩展图 百科全书
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pic2.zhimg.com/v2-0013104daa57c5fe7aeb4720ae76c1b9_b.jpg" data-lightbox="roadtrip" data-title="超超超赞的算法与数据结构之图论知识点及相关文章集锦 知乎">
+						<img class="card-img" src="https://pic2.zhimg.com/v2-0013104daa57c5fe7aeb4720ae76c1b9_b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaKNBU_P_oFyo0zrEiBD9boCZC66ShXr4q4THBenWYjLpcO6-K_FXuCfBUaVm-ZMYJD3E';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				超超超赞的算法与数据结构之图论知识点及相关文章集锦 知乎
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://pluvet-1251765364.cos.ap-chengdu.myqcloud.com/typora%5C20201129165258_12851fff782b6dc9fe9c8cf3347b3c01.png" data-lightbox="roadtrip" data-title="离散数学 图论 笔记 Pluveto">
+						<img class="card-img" src="https://pluvet-1251765364.cos.ap-chengdu.myqcloud.com/typora%5C20201129165258_12851fff782b6dc9fe9c8cf3347b3c01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxvKGpOSUmV2hAHcZ4QiAeFnpZRuHjQmBVEbUiVg6nve_HUcd33G96N0oP2vmUf_4Zu6E';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				离散数学 图论 笔记 Pluveto
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://i0.hdslb.com/bfs/archive/26d1c941e0bf54136a967f4044c56228cf69a9e6.jpg" data-lightbox="roadtrip" data-title="一笔画勾结了图的同构理论 用各种属性决定其不同构 例如有的是二部图 完全匹配 三可着色 图论 哔哩哔哩">
+						<img class="card-img" src="http://i0.hdslb.com/bfs/archive/26d1c941e0bf54136a967f4044c56228cf69a9e6.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnLHu-4HPYIkMxTN8tggSZHA-bt-jEllVpSsdbs3CHNOnF2BWW1nRaN6WBht51XH9t59U';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				一笔画勾结了图的同构理论 用各种属性决定其不同构 例如有的是二部图 完全匹配 三可着色 图论 哔哩哔哩
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/6n-graf.svg/1200px-6n-graf.svg.png" data-lightbox="roadtrip" data-title="图论 维基百科 自由的百科全书">
+						<img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/6n-graf.svg/1200px-6n-graf.svg.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQudHqBxp4s1GtCwI6ybkCE-zgJ5vdcb_Bzqw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图论 维基百科 自由的百科全书
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://images-na.ssl-images-amazon.com/images/I/61DI3u35UqL.jpg" data-lightbox="roadtrip" data-title="图论 第2版 普通高等教育 十一五 国家级规划教材 王树禾 9787030245953 Amazon Com Books">
+						<img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61DI3u35UqL.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG704tJie9sUa6e1C7P0Fxq6QD-alkIQow_w';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图论 第2版 普通高等教育 十一五 国家级规划教材 王树禾 9787030245953 Amazon Com Books
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Vertex_covers.svg/220px-Vertex_covers.svg.png" data-lightbox="roadtrip" data-title="覆盖 图论 维基百科 自由的百科全书">
+						<img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Vertex_covers.svg/220px-Vertex_covers.svg.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHG4kioU9Qfee-m39XwEGev3xTKMUOrJE7Mg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				覆盖 图论 维基百科 自由的百科全书
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1491318686i/34795156._UY500_SS500_.jpg" data-lightbox="roadtrip" data-title="图论算法理论 实现及应用 21世纪全国应用型本科计算机案例型规划教材 By 王桂平">
+						<img class="card-img" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1491318686i/34795156._UY500_SS500_.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_upxsprFZNbABZbQ0nhG5rs_9Hqw6Pz7Nbw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图论算法理论 实现及应用 21世纪全国应用型本科计算机案例型规划教材 By 王桂平
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img12.360buyimg.com//n0/jfs/t19432/151/1110450100/1129606/498acef3/5abb6635Nac64c429.jpg" data-lightbox="roadtrip" data-title="交通图论方法 冯树民 摘要书评试读 京东图书">
+						<img class="card-img" src="https://img12.360buyimg.com//n0/jfs/t19432/151/1110450100/1129606/498acef3/5abb6635Nac64c429.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcLPRpvFtYX8ChxfXEdewLtekk450uvaz8lA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				交通图论方法 冯树民 摘要书评试读 京东图书
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ae01.alicdn.com/kf/H098ff91c81bd4e8d897dfd8784bf66551.jpg" data-lightbox="roadtrip" data-title="图着色png图片 图着色png素材 图着色设计元素免费下载 Png素材网">
+						<img class="card-img" src="https://ae01.alicdn.com/kf/H098ff91c81bd4e8d897dfd8784bf66551.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSniVCRtJG52kR0A1mF2Ifs4mz06MeXwz21uw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图着色png图片 图着色png素材 图着色设计元素免费下载 Png素材网
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ae01.alicdn.com/kf/H56ac10615877477d990f31f106204d23A.jpg" data-lightbox="roadtrip" data-title="图着色png图片 图着色png素材 图着色设计元素免费下载 Png素材网">
+						<img class="card-img" src="https://ae01.alicdn.com/kf/H56ac10615877477d990f31f106204d23A.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSEOS_thlAxqBtZtMVdy7g47NFdjakRvJ2Cg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图着色png图片 图着色png素材 图着色设计元素免费下载 Png素材网
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Undirected.svg/440px-Undirected.svg.png" data-lightbox="roadtrip" data-title="图论 Wikiwand">
+						<img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Undirected.svg/440px-Undirected.svg.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuRmijCZZM98XJCKzqFOjo8ObzAndYAzzKww';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图论 Wikiwand
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img-blog.csdnimg.cn/20190528155903178.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9oZWluc3Zlbi5ibG9nLmNzZG4ubmV0,size_16,color_FFFFFF,t_70" data-lightbox="roadtrip" data-title="图论及其应用 学习笔记 图的着色 Heinsven的博客 Csdn博客">
+						<img class="card-img" src="https://img-blog.csdnimg.cn/20190528155903178.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9oZWluc3Zlbi5ibG9nLmNzZG4ubmV0,size_16,color_FFFFFF,t_70" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgCHudzgkL_hCTkdWIOamB06o451cg-Qyh_w';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图论及其应用 学习笔记 图的着色 Heinsven的博客 Csdn博客
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://img2018.cnblogs.com/blog/1699975/201905/1699975-20190527232138979-215684043.jpg" data-lightbox="roadtrip" data-title="图论学习笔记 一 Agust D 博客园">
+						<img class="card-img" src="https://img2018.cnblogs.com/blog/1699975/201905/1699975-20190527232138979-215684043.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjpA6Ob2LjQYxpfm-xuBs0MBhZ5nXq82GyA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图论学习笔记 一 Agust D 博客园
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Simple-bipartite-graph.svg/1200px-Simple-bipartite-graph.svg.png" data-lightbox="roadtrip" data-title="二分图 维基百科 自由的百科全书">
+						<img class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Simple-bipartite-graph.svg/1200px-Simple-bipartite-graph.svg.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz4a4VIJP32csv8PGzz5DyaYmNDj5KQBzXSg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				二分图 维基百科 自由的百科全书
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ae01.alicdn.com/kf/Hfe60c5d9662a4825ac6daaf2d01a65d1m.jpg" data-lightbox="roadtrip" data-title="图着色png图片 图着色png素材 图着色设计元素免费下载 Png素材网">
+						<img class="card-img" src="https://ae01.alicdn.com/kf/Hfe60c5d9662a4825ac6daaf2d01a65d1m.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaJ3Uzop1fayPx-02U4VfeKVO5ncKpkUiP6g';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				图着色png图片 图着色png素材 图着色设计元素免费下载 Png素材网
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.kenxuexi.com/uploads/allimg/200305/105039DK-4.jpg" data-lightbox="roadtrip" data-title="Ps匹配颜色的详细教材 Photoshop匹配颜色使用方法 肯学习">
+						<img class="card-img" src="https://www.kenxuexi.com/uploads/allimg/200305/105039DK-4.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQRndo9hKJT2L87g_CaZm5qc_1OIG2NoahQg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Ps匹配颜色的详细教材 Photoshop匹配颜色使用方法 肯学习
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+		 
+		<div class="d-block mt-4 p-3">
+
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+		
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Footer CSS JS -->
+<!-- Statcounter code for 2_mamakamaa https://mamakamaa.blogspot.com/ on Blogger -->
+<script type="text/javascript">
+//<![CDATA[
+var sc_project=12506186; 
+var sc_invisible=1; 
+var sc_security="04fde361"; 
+//]]>
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter_xhtml.js" async></script>
+
+		
+		
+		
+			</body>
+</html>

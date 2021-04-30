@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://image.itmedia.co.jp/news/articles/1606/06/l_haru_cl1.jpg
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>飯塚らによるディープラーニングでグレースケール画像に自動的に着色する手法</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "飯塚らによるディープラーニングでグレースケール画像に自動的に着色する手法",
+  "datePublished": "2021-04-30",
+  "image": [https://attech.info/wp-content/uploads/2019/08/c4bf87095340f97f50dd73f8db3bd533.jpg,https://image.slidesharecdn.com/ibis2017iizuka-171120134119/95/ibis2017-44-638.jpg?cb=1511228758,https://robotstart.info/wp-content/uploads/2016/06/color.png],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=飯塚らによるディープラーニングでグレースケール画像に自動的に着色する手法",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Blog" class="navbar-brand mb-1">Blog</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div class="d-block p-4">
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd232bd6e1c0d85f8dc8c8119bc5f5a1e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/d232bd6e1c0d85f8dc8c8119bc5f5a1e/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+</div>			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>飯塚らによるディープラーニングでグレースケール画像に自動的に着色する手法</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-dark" href="/%E3%81%BB%E3%81%93%E3%82%8A-%E7%9B%AE%E7%AB%8B%E3%81%9F-%E3%81%AA%E3%81%84-%E8%89%B2.html">ほこり 目立た ない 色</a>
+											<a class="badge badge-success" href="/5-%E8%89%B2-%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%AB-%E6%9C%80%E6%96%B0.html">5 色 コントロール 最新</a>
+											<a class="badge badge-success" href="/%E3%82%A2%E3%83%B3-%E3%83%A9%E3%83%83%E3%82%AD%E3%83%BC-%E3%82%AB%E3%83%A9%E3%83%BC-%E5%A5%BD%E3%81%8D-%E3%81%AA-%E8%89%B2.html">アン ラッキー カラー 好き な 色</a>
+											<a class="badge badge-secondary" href="/%E3%83%87%E3%83%8B%E3%83%A0-%E8%89%B2-%E8%90%BD%E3%81%A1-%E8%90%BD%E3%81%A8%E3%81%97-%E6%96%B9.html">デニム 色 落ち 落とし 方</a>
+											<a class="badge badge-danger" href="/%E6%98%8E%E6%97%A5-%E8%89%B2-%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89-%E3%82%A8%E3%83%B3%E3%83%89-a.html">明日 色 ワールド エンド a</a>
+											<a class="badge badge-primary" href="/jww-%E6%96%87%E5%AD%97-%E8%89%B2-%E4%B8%80%E6%8B%AC-%E5%A4%89%E6%9B%B4.html">jww 文字 色 一括 変更</a>
+											<a class="badge badge-primary" href="/%E6%97%A5%E6%9C%AC-%E6%A4%9C%E6%9F%BB%E6%95%B0-%E3%82%B3%E3%83%AD%E3%83%8A.html">日本 検査数 コロナ</a>
+											<a class="badge badge-primary" href="/%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3%E7%8E%8B%E9%B9%BF%E5%85%90%E5%B3%B6%E3%82%B3%E3%83%AD%E3%83%8A.html">ラーメン王鹿児島コロナ</a>
+											<a class="badge badge-primary" href="/%E5%89%B5-%E8%8B%B1-%E3%82%BC%E3%83%9F%E3%83%8A%E3%83%BC%E3%83%AB-%E3%83%90%E3%82%A4%E3%83%88-%E9%AB%AA-%E8%89%B2.html">創 英 ゼミナール バイト 髪 色</a>
+											<a class="badge badge-warning" href="/%E6%96%B0%E7%94%9F%E5%85%90-%E3%81%AE-%E7%9A%AE%E8%86%9A-%E3%81%AE-%E8%89%B2.html">新生児 の 皮膚 の 色</a>
+											<a class="badge badge-success" href="/%E6%98%9F%E3%81%AE%E9%9B%AB-%E3%83%AC%E3%82%B8%E3%83%B3%E7%9D%80%E8%89%B2.html">星の雫 レジン着色</a>
+											<a class="badge badge-success" href="/%E3%82%A8%E3%83%97%E3%82%BD%E3%83%B3-%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BF%E3%83%BC-%E8%89%B2-%E8%96%84%E3%81%84.html">エプソン プリンター 色 薄い</a>
+											<a class="badge badge-success" href="/%E3%82%B3%E3%83%AD%E3%83%8A%E3%83%95%E3%82%A1%E3%83%B3%E3%83%92%E3%83%BC%E3%82%BF%E3%83%BC%E3%81%AE%E4%BB%8A%E6%97%A5.html">コロナファンヒーターの今日</a>
+											<a class="badge badge-primary" href="/%E6%9D%B1%E6%96%B9-%E3%83%8B%E3%82%B3%E3%82%AB%E3%83%A9-%E8%89%B2-%E3%81%AF-%E5%8C%82-%E3%81%B8-%E3%81%A9-%E6%95%A3%E3%82%8A-%E3%81%AC%E3%82%8B-%E3%82%92.html">東方 ニコカラ 色 は 匂 へ ど 散り ぬる を</a>
+											<a class="badge badge-warning" href="/%E9%A2%A8%E6%B0%B4-%E8%B2%A1%E5%B8%83-%E8%89%B2-%E3%82%B0%E3%83%AC%E3%83%BC.html">風水 財布 色 グレー</a>
+						</div>
+<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a7e6ae4bcf1c49afa3b184d0c694ad6c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/a7e6ae4bcf1c49afa3b184d0c694ad6c/invoke.js"></scr' + 'ipt>');
+</script>
+		
+	</center>
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="https://blog.misosi.ru/content/images/2016/06/colorized.jpg" data-lightbox="roadtrip" data-title="飯塚らによるディープラーニングでグレースケール画像に自動的に着色する手法">
+						<img class="card-img" src="https://blog.misosi.ru/content/images/2016/06/colorized.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPimedk2FFTMhfFKuDKfCO3DrkmQclRSLmb3lmNvwMSNJVmqFjSN_fB68kVooAEAGslOo';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				飯塚らによるディープラーニングでグレースケール画像に自動的に着色する手法
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://blog.misosi.ru/content/images/2016/06/grayscale.jpg" data-lightbox="roadtrip" data-title="飯塚らによるディープラーニングでグレースケール画像に自動的に着色する手法のデモ実装をwebでサクッと試せるサービスを作った">
+						<img class="card-img" src="https://blog.misosi.ru/content/images/2016/06/grayscale.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxlxvA5OdpjwNodaB49-d7eeImkW9nMifWt7amyiZRpiA81CgUWrsyxbFulQlPmLsn3XQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				飯塚らによるディープラーニングでグレースケール画像に自動的に着色する手法のデモ実装をwebでサクッと試せるサービスを作った
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://robotstart.info/wp-content/uploads/2016/06/color02.png" data-lightbox="roadtrip" data-title="人工知能 ディープラーニングで 白黒写真の自動色付け やってみた ロボスタ">
+						<img class="card-img" src="https://robotstart.info/wp-content/uploads/2016/06/color02.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnYQxWVuDoJdXvWsFMh0iqKjl2GvbzsIwE57We2yxHiXb4_yOd8I4tC3beX812ZGwfsmM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				人工知能 ディープラーニングで 白黒写真の自動色付け やってみた ロボスタ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://robotstart.info/wp-content/uploads/2016/06/13.jpg" data-lightbox="roadtrip" data-title="人工知能 ディープラーニングで 白黒写真の自動色付け やってみた ロボスタ">
+						<img class="card-img" src="https://robotstart.info/wp-content/uploads/2016/06/13.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf4fDHbeqegDWups02ePqYuaHN1SSAFhsLj9F3dGSyGV1oEVKQzTGVANv2FskhUebrtTw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				人工知能 ディープラーニングで 白黒写真の自動色付け やってみた ロボスタ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://c2.staticflickr.com/8/7116/27306556960_13dd254daa_c.jpg" data-lightbox="roadtrip" data-title="飯塚らによるディープラーニングでグレースケール画像に自動的に着色する手法のデモ実装をwebでサクッと試せるサービスを作った">
+						<img class="card-img" src="https://c2.staticflickr.com/8/7116/27306556960_13dd254daa_c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh1BTebZZjKY_YpCgzkhQxeSOt7cALSgtlEEg1pEUQJN_5toyWN7XxUxHMoL0pSbts1CU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				飯塚らによるディープラーニングでグレースケール画像に自動的に着色する手法のデモ実装をwebでサクッと試せるサービスを作った
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://robotstart.info/wp-content/uploads/2016/06/color01.png" data-lightbox="roadtrip" data-title="人工知能 ディープラーニングで 白黒写真の自動色付け やってみた ロボスタ">
+						<img class="card-img" src="https://robotstart.info/wp-content/uploads/2016/06/color01.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAxmpIm24Ml4ciYxeab6OpMWT8vLWcUlppWeKp56px_TAv5bL18AaN4WibjhvYYQKAzkc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				人工知能 ディープラーニングで 白黒写真の自動色付け やってみた ロボスタ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	
+</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="https://robotstart.info/wp-content/uploads/2016/06/01.jpg" data-lightbox="roadtrip" data-title="人工知能 ディープラーニングで 白黒写真の自動色付け やってみた ロボスタ">
+						<img class="card-img" src="https://robotstart.info/wp-content/uploads/2016/06/01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNVglrN7yL0yKZVr-5uy_x4R6UdeueMYeICi4lLcE8b7SWliHBg70EmbG5PdO91fpP87I';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				人工知能 ディープラーニングで 白黒写真の自動色付け やってみた ロボスタ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://image.itmedia.co.jp/nl/articles/1606/08/l_mach_160608demo01.jpg" data-lightbox="roadtrip" data-title="白黒写真をカラーに自動変換するwebサービス 早稲田大学研究チームによる技術を利用 ねとらぼ">
+						<img class="card-img" src="https://image.itmedia.co.jp/nl/articles/1606/08/l_mach_160608demo01.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-r-WvVojSP730HiNkJRtPHvSbxT8bo7rNubgyC4jrBsSAzy2wh2tOXzoANTkIRQ-DFfo';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				白黒写真をカラーに自動変換するwebサービス 早稲田大学研究チームによる技術を利用 ねとらぼ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://image.slidesharecdn.com/ibis2017iizuka-171120134119/95/ibis2017-33-638.jpg?cb=1511228758" data-lightbox="roadtrip" data-title="Ibis2017 講演 ディープラーニングによる画像変換">
+						<img class="card-img" src="https://image.slidesharecdn.com/ibis2017iizuka-171120134119/95/ibis2017-33-638.jpg?cb=1511228758" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQokfYdDsZs-RA9dkFyNlRv4pI3x-0otHcOMhg141SucZVtTBU9h4Hb5-FaHNLFBTHidJw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Ibis2017 講演 ディープラーニングによる画像変換
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://robotstart.info/wp-content/uploads/2016/06/color.png" data-lightbox="roadtrip" data-title="人工知能 ディープラーニングで 白黒写真の自動色付け やってみた ロボスタ">
+						<img class="card-img" src="https://robotstart.info/wp-content/uploads/2016/06/color.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFJMiwVMoDQkOfN02GNQRifluDz9_Su_23eC5cOGdZzyJjjEd42rBDW1qCJSASoO9Vtj0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				人工知能 ディープラーニングで 白黒写真の自動色付け やってみた ロボスタ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://robotstart.info/wp-content/uploads/2016/06/leica.jpg" data-lightbox="roadtrip" data-title="人工知能 ディープラーニングで 白黒写真の自動色付け やってみた ロボスタ">
+						<img class="card-img" src="https://robotstart.info/wp-content/uploads/2016/06/leica.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM9LEncOrq4z_X5RUga1GA1PqcsolY8-9GNyHhCnSMx455wMqD4m-HFiyUtuO-7JN8QEY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				人工知能 ディープラーニングで 白黒写真の自動色付け やってみた ロボスタ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://robotstart.info/wp-content/uploads/2016/06/15.jpg" data-lightbox="roadtrip" data-title="人工知能 ディープラーニングで 白黒写真の自動色付け やってみた ロボスタ">
+						<img class="card-img" src="https://robotstart.info/wp-content/uploads/2016/06/15.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSUdG1z14iBn1GQN6lw37Xhl4TZ8NUTStVviBqQz5PhodWhsx3z5jEt3UVFSMFw3QhPH8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				人工知能 ディープラーニングで 白黒写真の自動色付け やってみた ロボスタ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://attech.info/wp-content/uploads/2019/08/84c12f37e50f3ad43c5b51efa6ec33fa.jpg" data-lightbox="roadtrip" data-title="人工知能で白黒写真をカラー化する 早稲田大学が開発 アトテク">
+						<img class="card-img" src="https://attech.info/wp-content/uploads/2019/08/84c12f37e50f3ad43c5b51efa6ec33fa.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQYXxH_D_nE4zTJYhHLo-z9S7gWVozOYTTZ0O9m0VZ8RahSVYRAtkrR5xShldqEGZrT9A';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				人工知能で白黒写真をカラー化する 早稲田大学が開発 アトテク
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://image.slidesharecdn.com/ibis2017iizuka-171120134119/95/ibis2017-44-638.jpg?cb=1511228758" data-lightbox="roadtrip" data-title="Ibis2017 講演 ディープラーニングによる画像変換">
+						<img class="card-img" src="https://image.slidesharecdn.com/ibis2017iizuka-171120134119/95/ibis2017-44-638.jpg?cb=1511228758" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm5fVB19fHD3xULwU5A1AcB6w5xxneaNDexIgbrlG4Gncrg8VjxS4Kk5TIECvphFutPug';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Ibis2017 講演 ディープラーニングによる画像変換
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://robotstart.info/wp-content/uploads/2016/06/17.jpg" data-lightbox="roadtrip" data-title="人工知能 ディープラーニングで 白黒写真の自動色付け やってみた ロボスタ">
+						<img class="card-img" src="https://robotstart.info/wp-content/uploads/2016/06/17.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJqtFvrgRxLYP4cSFR3IvTtK2Us13BJgu5smjhEU-xFUYC-TMiOaJCvZVtqpJRyLgNYDE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				人工知能 ディープラーニングで 白黒写真の自動色付け やってみた ロボスタ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://image.itmedia.co.jp/news/articles/1606/06/haru_cl3.jpg" data-lightbox="roadtrip" data-title="モノクロ写真をアップすると 人工知能で白黒写真をカラーに を試せるwebサービス Itmedia News">
+						<img class="card-img" src="https://image.itmedia.co.jp/news/articles/1606/06/haru_cl3.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_waU-yUo6jUyAJIRrNVlFjzsMUi386_TaI9zjPnC1la31R-u0VpRiWnA2UdBew6P9f64';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				モノクロ写真をアップすると 人工知能で白黒写真をカラーに を試せるwebサービス Itmedia News
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://image.slidesharecdn.com/ibis2017iizuka-171120134119/95/ibis2017-10-638.jpg?cb=1511228758" data-lightbox="roadtrip" data-title="Ibis2017 講演 ディープラーニングによる画像変換">
+						<img class="card-img" src="https://image.slidesharecdn.com/ibis2017iizuka-171120134119/95/ibis2017-10-638.jpg?cb=1511228758" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuCZDHviBgT0EI0sjpEVXQSSSURnKBBlBOcgdIwd-_2Jy00MWLORJhOt-Zew1e7gqae24';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Ibis2017 講演 ディープラーニングによる画像変換
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://robotstart.info/wp-content/uploads/2016/06/09.jpg" data-lightbox="roadtrip" data-title="人工知能 ディープラーニングで 白黒写真の自動色付け やってみた ロボスタ">
+						<img class="card-img" src="https://robotstart.info/wp-content/uploads/2016/06/09.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsygsIuPjQ-e7Z8kiUYnxgOxAgYTsOpwfUr-ahjnHWTwOPzGcbPuPLcCubMvMxgkCnHvA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				人工知能 ディープラーニングで 白黒写真の自動色付け やってみた ロボスタ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://image.slidesharecdn.com/ibis2017iizuka-171120134119/95/ibis2017-1-638.jpg?cb=1511228758" data-lightbox="roadtrip" data-title="Ibis2017 講演 ディープラーニングによる画像変換">
+						<img class="card-img" src="https://image.slidesharecdn.com/ibis2017iizuka-171120134119/95/ibis2017-1-638.jpg?cb=1511228758" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-cHmPCmi883lloiXed8nDCriGNWP7NLK3OuZZH_SMZeYoV8qPzdsg99JBSf6BSffCXV8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Ibis2017 講演 ディープラーニングによる画像変換
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://c1.staticflickr.com/9/8418/29746084744_76c337f1db_c.jpg" data-lightbox="roadtrip" data-title="俺のニューラルネットワークは学習能力の低い俺に似てちゃんと学習しないし 気分転換にtensorflowにプルリク投げたらマージされた">
+						<img class="card-img" src="https://c1.staticflickr.com/9/8418/29746084744_76c337f1db_c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpqi_E4Vv7ce0a3AVOdOoNDsrVnsQdnxju--5cRDv_1edWPZKt4GcJi7nVxaokenYkOWo';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				俺のニューラルネットワークは学習能力の低い俺に似てちゃんと学習しないし 気分転換にtensorflowにプルリク投げたらマージされた
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://iizuka.cs.tsukuba.ac.jp/projects/colorization/images/teaser/3.png" data-lightbox="roadtrip" data-title="飯塚里志 ディープネットワークを用いた大域特徴と局所特徴の学習による白黒写真の自動色付け">
+						<img class="card-img" src="http://iizuka.cs.tsukuba.ac.jp/projects/colorization/images/teaser/3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCnxWgvpahJyI50ptac1kuFuHgDfLRU3E8lA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				飯塚里志 ディープネットワークを用いた大域特徴と局所特徴の学習による白黒写真の自動色付け
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://image.slidesharecdn.com/ibis2017iizuka-171120134119/95/ibis2017-2-638.jpg?cb=1511228758" data-lightbox="roadtrip" data-title="Ibis2017 講演 ディープラーニングによる画像変換">
+						<img class="card-img" src="https://image.slidesharecdn.com/ibis2017iizuka-171120134119/95/ibis2017-2-638.jpg?cb=1511228758" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU4ydbr2u2OZSmTtt0JDF858ER8Id76X8g4Q';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Ibis2017 講演 ディープラーニングによる画像変換
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://image.itmedia.co.jp/news/articles/1606/06/l_haru_cl1.jpg" data-lightbox="roadtrip" data-title="モノクロ写真をアップすると 人工知能で白黒写真をカラーに を試せるwebサービス Itmedia News">
+						<img class="card-img" src="https://image.itmedia.co.jp/news/articles/1606/06/l_haru_cl1.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs46Tp7g6X8lwNRb0YABMUAsV9ufS1lSa2qg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				モノクロ写真をアップすると 人工知能で白黒写真をカラーに を試せるwebサービス Itmedia News
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://robotstart.info/wp-content/uploads/2016/06/04.jpg" data-lightbox="roadtrip" data-title="人工知能 ディープラーニングで 白黒写真の自動色付け やってみた ロボスタ">
+						<img class="card-img" src="https://robotstart.info/wp-content/uploads/2016/06/04.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUPfOSLu9Pbg1H-TifVlGA66qbLtZpn88xdA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				人工知能 ディープラーニングで 白黒写真の自動色付け やってみた ロボスタ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.imgur.com/OuOsSyH.png" data-lightbox="roadtrip" data-title="Comicolorization Semi Automatic Manga Colorization">
+						<img class="card-img" src="https://i.imgur.com/OuOsSyH.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzZMVnAV8n-pubYgKP8NQzVPZOGlh8gUbApg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Comicolorization Semi Automatic Manga Colorization
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn.image.st-hatena.com/image/square/505ace146d2fdb49837803dbee9a45e7242f4046/backend=imagemagick;height=180;version=1;width=180/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fb%2Fbonjiri_3939%2F20200920%2F20200920003118.png" data-lightbox="roadtrip" data-title="4 Let There Be Color 深層学習論文まとめ">
+						<img class="card-img" src="https://cdn.image.st-hatena.com/image/square/505ace146d2fdb49837803dbee9a45e7242f4046/backend=imagemagick;height=180;version=1;width=180/https%3A%2F%2Fcdn-ak.f.st-hatena.com%2Fimages%2Ffotolife%2Fb%2Fbonjiri_3939%2F20200920%2F20200920003118.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYBhEWlvYxGAkLDbLbbHjY--zoISIJIroSkg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				4 Let There Be Color 深層学習論文まとめ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://attech.info/wp-content/uploads/2019/08/c4bf87095340f97f50dd73f8db3bd533.jpg" data-lightbox="roadtrip" data-title="人工知能で白黒写真をカラー化する 早稲田大学が開発 アトテク">
+						<img class="card-img" src="https://attech.info/wp-content/uploads/2019/08/c4bf87095340f97f50dd73f8db3bd533.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHiAScpHFEPzF7LGtko5fk7wlNSb0H3OdLAg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				人工知能で白黒写真をカラー化する 早稲田大学が開発 アトテク
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://image.slidesharecdn.com/ibis2017iizuka-171120134119/95/ibis2017-3-638.jpg?cb=1511228758" data-lightbox="roadtrip" data-title="Ibis2017 講演 ディープラーニングによる画像変換">
+						<img class="card-img" src="https://image.slidesharecdn.com/ibis2017iizuka-171120134119/95/ibis2017-3-638.jpg?cb=1511228758" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsbGMxNxvCG1FsHaiRv4mK5Rna8h9Y03gBag';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Ibis2017 講演 ディープラーニングによる画像変換
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn-ak.f.st-hatena.com/images/fotolife/a/artteknika_kamu/20171228/20171228120901.jpg" data-lightbox="roadtrip" data-title="モノクロ映像 写真のカラー化技術 今昔 アールテクニカ地下ガレージ">
+						<img class="card-img" src="https://cdn-ak.f.st-hatena.com/images/fotolife/a/artteknika_kamu/20171228/20171228120901.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR526vHSffeoNzMDE2U1-vMIiLq_aA49X_zuA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				モノクロ映像 写真のカラー化技術 今昔 アールテクニカ地下ガレージ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://c2.staticflickr.com/2/1662/26132370020_706bdbe90d_c.jpg" data-lightbox="roadtrip" data-title="飯塚らによるディープラーニングでグレースケール画像に自動的に着色する手法のデモ実装をwebでサクッと試せるサービスを作った">
+						<img class="card-img" src="https://c2.staticflickr.com/2/1662/26132370020_706bdbe90d_c.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTV668ACpKAqiO_QM_VvxLqPN3ks6QDIU5ww';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				飯塚らによるディープラーニングでグレースケール画像に自動的に着色する手法のデモ実装をwebでサクッと試せるサービスを作った
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://iizuka.cs.tsukuba.ac.jp/projects/colorization/images/model.png" data-lightbox="roadtrip" data-title="飯塚里志 ディープネットワークを用いた大域特徴と局所特徴の学習による白黒写真の自動色付け">
+						<img class="card-img" src="http://iizuka.cs.tsukuba.ac.jp/projects/colorization/images/model.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS01sCp_zGN7Q5D1Dw9AJLsXkTsemSC1B7uxw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				飯塚里志 ディープネットワークを用いた大域特徴と局所特徴の学習による白黒写真の自動色付け
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://image.slidesharecdn.com/ibis2017iizuka-171120134119/95/ibis2017-11-638.jpg?cb=1511228758" data-lightbox="roadtrip" data-title="Ibis2017 講演 ディープラーニングによる画像変換">
+						<img class="card-img" src="https://image.slidesharecdn.com/ibis2017iizuka-171120134119/95/ibis2017-11-638.jpg?cb=1511228758" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvc6KedfAIPEU67Eaopt-0csthOodHiP_MJA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Ibis2017 講演 ディープラーニングによる画像変換
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://blog-imgs-94.fc2.com/s/y/a/syararin/tmpimg1607171653n120160717184132972.jpg" data-lightbox="roadtrip" data-title="ここまで来たか 画像を選ぶだけで白黒写真をカラー化してくれるweb自動変換サービス 写真の画像補正">
+						<img class="card-img" src="https://blog-imgs-94.fc2.com/s/y/a/syararin/tmpimg1607171653n120160717184132972.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsVkXiY20Do-DLY2ldy-5I9ftP1abJXG772g';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				ここまで来たか 画像を選ぶだけで白黒写真をカラー化してくれるweb自動変換サービス 写真の画像補正
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+		 
+		<div class="d-block mt-4 p-3">
+
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+		
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Footer CSS JS -->
+<!-- Statcounter code for 2_mamakamaa https://mamakamaa.blogspot.com/ on Blogger -->
+<script type="text/javascript">
+//<![CDATA[
+var sc_project=12506186; 
+var sc_invisible=1; 
+var sc_security="04fde361"; 
+//]]>
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter_xhtml.js" async></script>
+
+		
+		
+		
+			</body>
+</html>
